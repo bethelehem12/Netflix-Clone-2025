@@ -36,9 +36,12 @@
   align-items: center;
   height: 10vh;
   color: white;
-  z-index: 1;
-  /* background-color: transparent; */
-  background-color: #111; /* pick one color or control with .nav-black */
+  z-index: 1000;
+  /* background-color: rgba(0, 0, 0, 0.3);  */
+  /* semi-transparent black */
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+   /* pick one color or control with .nav-black */
   transition: all 0.5s ease-in;
 }
 
@@ -66,3 +69,14 @@
 .header-right li {
   margin: 0 15px;
 }
+
+.zoom:active {
+  animation: zoom 0.1s ease;
+}
+
+@keyframes zoom {
+  0% { transform: scale(1); color: white; }
+  50% { transform: scale(2.5); color: red; }
+  100% { transform: scale(1); color: white; }
+}
+

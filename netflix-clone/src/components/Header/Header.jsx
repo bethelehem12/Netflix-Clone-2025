@@ -25,7 +25,8 @@ const Header = () => {
         </div>
         <div className="header-right">
           <ul>
-            <li>
+            <li className="zoom">Kids</li>
+            <li className="zoom">
               <SearchIcon />
             </li>
             <li>
@@ -34,7 +35,9 @@ const Header = () => {
             <li>
               <AccountBoxIcon />
             </li>
-            <li><ArrowDropDownIcon/></li>
+            <li>
+              <ArrowDropDownIcon />
+            </li>
           </ul>
         </div>
       </div>
