@@ -37,11 +37,8 @@
   height: 10vh;
   color: white;
   z-index: 1000;
-  /* background-color: rgba(0, 0, 0, 0.3);  */
-  /* semi-transparent black */
   backdrop-filter: blur(10px);
   background-color: transparent;
-   /* pick one color or control with .nav-black */
   transition: all 0.5s ease-in;
 }
 
